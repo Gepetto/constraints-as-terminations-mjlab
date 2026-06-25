@@ -114,6 +114,7 @@ def run_train(task_id: str, cfg: TrainConfig, log_dir: Path) -> None:
   env = manager(
     cfg=cfg.env, device=device, render_mode="rgb_array" if cfg.video else None
   )
+  print(env)
 
   log_root_path = log_dir.parent  # Go up from specific run dir to experiment dir.
 

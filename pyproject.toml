@@ -22,11 +22,8 @@ dependencies = [
   "ty>=0.0.53"
 ]
 
-[project.entry-points."mjlab.tasks"]
-cat_mjlab = "cat_mjlab.tasks"
-
 [project.scripts]
-train = "cat_mjlab.scripts.train:main"
+train-cat = "cat_mjlab.scripts.train:main"
 
 [project.urls]
 "Bug Reports" = "https://github.com/Gepetto/constraints-as-terminations-mjlab/issues"
