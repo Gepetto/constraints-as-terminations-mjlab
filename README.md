@@ -23,7 +23,10 @@ def my_cat_env_cfg()
     "joint_velocity_limits": ConstraintTermCfg(
        func=mdp_constraints.joint_velocity_limits,
        max_p=1.0,
-       params={"asset_cfg": SceneEntityCfg("robot", joint_names=".*")},
+       params={
+         "limit": 0.5,
+         "asset_cfg": SceneEntityCfg("robot", joint_names=".*"),
+       },
     ),
   }
 
