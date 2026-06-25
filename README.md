@@ -69,8 +69,6 @@ register_mjlab_task(
   runner_cls=MjlabOnPolicyRunner,
 )
 ```
-```
-```
 
 ## Train
 
