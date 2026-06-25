@@ -4,7 +4,9 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
-  "ruff>=0.14.14"
+  "ruff>=0.14.14",
+  "ty>=0.0.53",
+  "pre-commit>=4.6.0"
 ]
 
 [project]
@@ -17,9 +19,7 @@ authors = [{email = "kwojciecho@laas.fr", name = "Krzysztof Wojciechowski"}]
 description = "Mjlab implementation of Constraints as Termination algorithm"
 requires-python = ">=3.10,<3.14"
 dependencies = [
-  "mjlab>=1.4.0",
-  "pre-commit>=4.6.0",
-  "ty>=0.0.53"
+  "mjlab>=1.4.0"
 ]
 
 [project.scripts]
