@@ -1,6 +1,6 @@
 # CaT Mjlab
 
-[![mjlab](https://img.shields.io/badge/mjlab-1.1.1-76B900.svg)](https://mujocolab.github.io/mjlab/v1.1.1/index.html)
+[![mjlab](https://img.shields.io/badge/mjlab-1.4.0-76B900.svg)](https://mujocolab.github.io/mjlab/v1.4.0/index.html)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
 [![License](https://img.shields.io/badge/license-BSD%202--Clause-blue.svg)](https://opensource.org/licenses/BSD-2-Clause)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
