@@ -25,7 +25,7 @@ from cat_mjlab.envs import CaTManagerBasedRlEnv, CaTManagerBasedRlEnvCfg  # isor
 
 @dataclass(frozen=True)
 class TrainConfig:
-  env: ManagerBasedRlEnvCfg
+  env: CaTManagerBasedRlEnvCfg
   agent: RslRlBaseRunnerCfg
   registry_name: str | None = None
   video: bool = False
@@ -115,7 +115,6 @@ def run_train(task_id: str, cfg: TrainConfig, log_dir: Path) -> None:
   env = manager(
     cfg=cfg.env, device=device, render_mode="rgb_array" if cfg.video else None
   )
-  print(env)
 
   log_root_path = log_dir.parent  # Go up from specific run dir to experiment dir.
 
