@@ -9,7 +9,6 @@ from pathlib import Path
 from typing import Literal, cast
 
 import tyro
-from cat_mjlab.envs import CaTManagerBasedRlEnv, CaTManagerBasedRlEnvCfg
 from mjlab.envs import ManagerBasedRlEnv, ManagerBasedRlEnvCfg
 from mjlab.rl import MjlabOnPolicyRunner, RslRlBaseRunnerCfg, RslRlVecEnvWrapper
 from mjlab.scripts._cli import maybe_print_top_level_help
@@ -20,6 +19,8 @@ from mjlab.utils.os import dump_yaml, get_checkpoint_path, get_wandb_checkpoint_
 from mjlab.utils.torch import configure_torch_backends
 from mjlab.utils.wandb import add_wandb_tags
 from mjlab.utils.wrappers import VideoRecorder
+
+from cat_mjlab.envs import CaTManagerBasedRlEnv, CaTManagerBasedRlEnvCfg  # isort: skip
 
 
 @dataclass(frozen=True)
