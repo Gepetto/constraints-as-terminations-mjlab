@@ -76,13 +76,18 @@ register_mjlab_task(
 ## Train
 
 > [!IMPORTANT]
-> Currently (as of version 1.4.0) mjlab does not support custom environments. That is why we have to use script `train-cat` which enables this functionality. This script is also compatible with standard `ManagerBasedRlEnv`
+> Currently (as of version 1.4.0) mjlab does not support custom environments. That is why we have to use `train-cat` and `play-cat` scripts which enable this functionality. Those scripts are also compatible with standard `ManagerBasedRlEnv`
 
 
 ```bash
 uv run train-cat My-CaT-Task
 ```
 
+## Play
+
+```bash
+uv run play-cat My-CaT-Task
+```
 
 
 ## Citing

@@ -23,6 +23,7 @@ dependencies = [
 ]
 
 [project.scripts]
+play-cat = "cat_mjlab.scripts.play:main"
 train-cat = "cat_mjlab.scripts.train:main"
 
 [project.urls]
