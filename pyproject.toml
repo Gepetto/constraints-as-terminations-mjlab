@@ -1,0 +1,38 @@
+[build-system]
+requires = ["uv_build>=0.8.19,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+  "ruff>=0.14.14",
+  "ty>=0.0.53",
+  "pre-commit>=4.6.0"
+]
+
+[project]
+name = "cat-mjlab"
+version = "0.1.0"
+license = "BSD-2-Clause"
+license-files = ["LICENSE"]
+readme = "README.md"
+authors = [{email = "kwojciecho@laas.fr", name = "Krzysztof Wojciechowski"}]
+description = "Mjlab implementation of Constraints as Termination algorithm"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "mjlab>=1.4.0"
+]
+
+[project.scripts]
+play-cat = "cat_mjlab.scripts.play:main"
+train-cat = "cat_mjlab.scripts.train:main"
+
+[project.urls]
+"Bug Reports" = "https://github.com/Gepetto/constraints-as-terminations-mjlab/issues"
+"Source" = "https://github.com/Gepetto/constraints-as-terminations-mjlab"
+
+[tool.ruff]
+indent-width = 2
+src = ["cat_mjlab"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]
