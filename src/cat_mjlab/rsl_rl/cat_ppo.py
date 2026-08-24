@@ -6,14 +6,13 @@
 from __future__ import annotations
 
 import torch
+from cat_mjlab.rsl_rl.rollout_storage import CaTRolloutStorage
 from rsl_rl.algorithms.ppo import PPO
 from rsl_rl.env import VecEnv
 from rsl_rl.extensions import resolve_rnd_config, resolve_symmetry_config
 from rsl_rl.models import MLPModel
 from rsl_rl.utils import resolve_callable, resolve_obs_groups
 from tensordict import TensorDict
-
-from cat_mjlab.rsl_rl.rollout_storage import CaTRolloutStorage
 
 
 class CaTPPO(PPO):
