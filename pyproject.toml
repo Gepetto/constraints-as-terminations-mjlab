@@ -15,7 +15,7 @@ version = "0.1.0"
 license = "BSD-2-Clause"
 license-files = ["LICENSE"]
 readme = "README.md"
-authors = [{email = "kwojciecho@laas.fr", name = "Krzysztof Wojciechowski"}]
+authors = [{ email = "kwojciecho@laas.fr", name = "Krzysztof Wojciechowski" }]
 description = "Mjlab implementation of Constraints as Termination algorithm"
 requires-python = ">=3.10,<3.14"
 dependencies = [
